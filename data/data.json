@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "stingId": "assasinsCreed",
+        "gameTitle": "Assassin's Creed",
+        "genre": ["Action","Role-play"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/Y9Jm3Mmm/Assassin-s-Creed.jpg",
+        "price": 50
+    },
+    {
+        "id": 2,
+        "stringId": "assassinsCreedTwo",
+        "gameTitle": "Assassin's Creed II",
+        "genre": ["Action","Role-play", "Open World"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/Vk5LfNPm/AC-2.jpg",
+        "price": 75
+    },
+    {
+        "id": 3,
+        "stringId": "assasinsCreedThree",
+        "gameTitle": "Assassin's Creed III",
+        "genre": ["Action","Role-play", "Open World"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/3xVB65pY/Assassin-s-Creed-III-Game-Cover.jpg",
+        "price": 100
+    },
+    {
+        "id": 4,
+        "stringId": "acBrotherhood",
+        "gameTitle": "AC Brotherhood",
+        "genre": ["Action","Role-play", "Open World"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/qMc4qjmc/AC-Brother-Hood.webp",
+        "price": 50
+    },
+    {
+        "id": 5,
+        "stringId": "assassinsCreedRogue",
+        "gameTitle": "Assassin's Creed Rogue",
+        "genre": ["Action","Role-play", "Open World"],
+        "platform":"PS3",
+        "image": "https://i.postimg.cc/K8Sjs0zC/Assassin-s-Creed-Rogue.jpg",
+        "price": 100
+    },
+    {
+        "id": 6,
+        "stringId": "acBlackFlag",
+        "gameTitle": "AC IV: Black Flag",
+        "genre": ["Action","Role-play", "Open World"],
+        "platform":"PS3",
+        "image": "https://i.postimg.cc/jStwS8bP/Assassin-s-Creed-IV-Black-Flag-cover.jpg",
+        "price": 120
+    },
+    {
+        "id": 7,
+        "stringId": "metalGearSolidFive",
+        "gameTitle": "Metal Gear Solid V",
+        "genre": ["Action","Role-play", "Open World"],
+        "platform":"PS4",
+        "image": "https://i.postimg.cc/RZkYtng7/Metal-Gear-Solid-V-The-Phantom-Pain-cover.png",
+        "price": 100
+    },
+    {
+        "id": 8,
+        "stringId": "portalTwo",
+        "gameTitle": "Portal 2",
+        "genre": ["Puzzle","Role-play"],
+        "platform": "PS3",
+        "image": "https://i.postimg.cc/ht6QLVQt/Portal2cover.jpg",
+        "price": 75
+    },
+    {
+        "id": 9,
+        "stringId": "maddenNFLThree",
+        "gameTitle": "Madden NFL 2003",
+        "genre": ["Sports"],
+        "platform":"PS3",
+        "image": "https://i.postimg.cc/05XkKPw8/madden03.png",
+        "price": 50
+    },
+    {
+        "id": 10,
+        "stringId": "lastOfUs",
+        "gameTitle": "The Last of Us",
+        "genre": ["Action", "Horror","Role-play"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/ryjJSYVy/The-Last-of-Us.jpg",
+        "price": 100
+    },
+    {
+        "id": 11,
+        "stringId": "haloTwo",
+        "gameTitle": "Halo 2",
+        "genre": ["Action", "Role-play"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/zBsVWNy2/halo-2.jpg",
+        "price": 50
+    },
+    {
+        "id": 12,
+        "stringId": "redDeadRedemption",
+        "gameTitle": "Red Dead Redemption",
+        "genre": ["Action", "Role-play", "Open World"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/nV1JqZ9s/Red-Dead-Redemption.jpg",
+        "price": 120
+    },
+    {
+        "id": 13,
+        "stringId": "gtaSanAndreas",
+        "gameTitle": "GTA: San Andreas",
+        "genre": ["Action", "Role-play", "Open World"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/Mpw582pS/GTASA.jpg",
+        "price": 50
+    },
+    {
+        "id": 14,
+        "stringId": "skyrim",
+        "gameTitle": "Skyrim",
+        "genre": [""],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/vZ8nzQmc/The-Elder-Scrolls-V-Skyrim-cover.png",
+        "price": 150
+    },
+    {
+        "id": 15,
+        "stringId": "massEffectTwo",
+        "gameTitle": "Mass Effect 2",
+        "genre": ["Action", "Role-play"],
+        "platform": "PS3",
+        "image": "https://i.postimg.cc/1XTdKWGz/Mass-Effect2-cover.png",
+        "price": 75
+    },
+    {
+        "id": 16,
+        "stringId": "batmanArkhamCity",
+        "gameTitle": "Batman: Arkham City",
+        "genre": ["Action","Role-play","Open World"],
+        "platform": "PS3",
+        "image": "https://i.postimg.cc/1X2q56QT/Batman-Arkham-City-Game-Cover.jpg",
+        "price": 50
+    },
+    {
+        "id": 17,
+        "stringId": "eldenRing",
+        "gameTitle": "Elden Ring",
+        "genre": ["Action", "Role-play", "Open World", "Online-multiplayer"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/d1Kw2jRv/elden-ring.webp",
+        "price": 200
+    },
+    {
+        "id": 18,
+        "stringId": "gtaFive",
+        "gameTitle": "Grand Theft Auto V",
+        "genre": ["Action", "Role-play", "Open World"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/YSjBQyLJ/Grand-Theft-Auto-V.png",
+        "price": 175
+    },
+    {
+        "id": 19,
+        "stringId": "redDeadRedemptionTwo",
+        "gameTitle": "Red Dead Redemption 2",
+        "genre": ["Action", "Role-play", "Open World"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/wj9Mp0KP/Red-Dead-Redemption-II.jpg",
+        "price": 175
+    },
+    {
+        "id": 20,
+        "stringId": "borderlands",
+        "gameTitle": "Borderlands",
+        "genre": ["Action", "Role-play", "Open World", "FPS"],
+        "platform":"PC",
+        "image": "https://i.postimg.cc/rpcXPFb2/Borderlandscover.jpg",
+        "price": 50
+    }
+]
