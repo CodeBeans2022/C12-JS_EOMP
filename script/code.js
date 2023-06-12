@@ -1,17 +1,18 @@
+let setProducts;
+let cart;
 let data = fetch('../data/data.json')
 .then((response)=>response.json())
 .then((data)=>{
     setProducts = JSON.parse(localStorage.getItem('setProducts')) ? JSON.parse(localStorage.getItem('setProducts')) : data;
-    localStorage.setItem('defaultProducts', JSON.stringify(data))
-    renderProducts(data)
+    cart = JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : [];
+    localStorage.setItem('setProducts', JSON.stringify(setProducts))
+    renderProducts(setProducts)
 });
 
-let cart = JSON.parse(localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : [];
 
 let productsDisplayElement = document.querySelector('.products-display');
-let saveBtns;
-let deleteBtns;
-let setProducts;
+
+let cartBtns;
 
 function renderProducts(products){
     productsDisplayElement.innerHTML = '';
@@ -23,63 +24,25 @@ function renderProducts(products){
         <p><b>Genre:</b> ${item.genre}</p>
         <p><b>Price:</b> R${item.price}</p>
         
-        <button type="button" class="btn btn-primary mb-5 delete-button" data-id="${index}">Add To Cart ${item.gameTitle}</button>
-        <button type="button" class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="#${item.stringId}">
-        Edit ${item.gameTitle}
-        </button>
-        <button type="button" class="btn btn-danger mb-5 delete-button" data-id="${index}">Delete ${item.gameTitle}</button>
+        <button type="button" class="btn btn-primary mb-5 cart-button" data-id="${index}">Add ${item.gameTitle} To Cart</button>
         </div>
         
-        <div class="modal fade" id="${item.stringId}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-      <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">${item.gameTitle}</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-          <div class="modal-body">
-            <input type="text" class="form-control new-title-${item.stringId}" placeholder="New Title">
-            <input type="number" class="form-control new-price-${item.stringId}" placeholder="New Price">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary saveBtn" data-id="${index}" data-bs-dismiss="modal">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+       
      `
     });
-    saveBtns = [...document.querySelectorAll('.saveBtn')]
-    saveBtns.forEach((btn)=>{
-        btn.addEventListener('click', changeValues)
-    })
-    deleteBtns = [...document.querySelectorAll('.delete-button')]
-    deleteBtns.forEach((btn)=>{
-        btn.addEventListener('click', removeItem)
+    
+    cartBtns = [...document.querySelectorAll('.cart-button')]
+    cartBtns.forEach((btn)=>{
+        btn.addEventListener('click', addToCart)
     })
 }
 
-function changeValues(){
+
+
+function addToCart(){
     let itemIndex = this.getAttribute('data-id');
-    let newTitle = document.querySelector(`.new-title-${setProducts[itemIndex].stringId}`)
-    let newPrice = document.querySelector(`.new-price-${setProducts[itemIndex].stringId}`)
-    setProducts[itemIndex].gameTitle = newTitle.value;
-    setProducts[itemIndex].price = newPrice.value
-    renderProducts(setProducts);
-}
-
-function removeItem(){
-    let confirmation = prompt('Are you sure?\ny/n: ')
-    let itemIndex = this.getAttribute('data-id')
-    if(confirmation.toLocaleLowerCase() == 'y'){
-        setProducts.splice(itemIndex, 1);
-        alert('ITEM WAS REMOVED')
-        renderProducts()
-    } else if(confirmation.toLocaleLowerCase() == 'n'){
-        alert('ITEM WAS NOT REMOVED!')
-    } 
-    else {
-        alert("Invalid Input, Please reconfirm")
-    }
+    console.log(itemIndex)
+    cart.push(setProducts[itemIndex]);
+    localStorage.setItem('cart', JSON.stringify(cart))
+    alert('Item has been added to your cart!')
 }
